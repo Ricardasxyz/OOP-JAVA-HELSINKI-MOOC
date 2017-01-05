@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class ReversingName {
@@ -7,8 +8,8 @@ public class ReversingName {
         System.out.println("Type your name: ");
         String name = reader.nextLine();
         
-      for(int x = name.length()-1; x > 0; x--){
-          System.out.print(name.charAt(x));
-      }
+        for (int x=name.length()-1;x>=0;x--){
+            System.out.print(name.charAt(x));
+        }
     }
 }
