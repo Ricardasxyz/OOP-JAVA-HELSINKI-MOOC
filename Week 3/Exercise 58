@@ -1,0 +1,24 @@
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class RecurringWord {
+
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        ArrayList<String> words = new ArrayList<String>();
+        String xs = "lols";
+
+        while (!xs.equals("")) {
+            System.out.println("Type a word: ");
+            String x = reader.nextLine();
+
+            if (words.contains(x)) {
+                System.out.println("You gave the word " + x + " twice");
+                break;
+            } else {
+                words.add(x);
+            }
+        }
+
+    }
