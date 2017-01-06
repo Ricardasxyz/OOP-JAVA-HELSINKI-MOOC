@@ -1,0 +1,27 @@
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class WordsInReverseOrder {
+
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        ArrayList<String> words = new ArrayList<String>();
+        String haha = "Haha";
+
+        while (!haha.equals("")) {
+            System.out.println("Type a Word: ");
+            haha = reader.nextLine();
+            words.add(haha);
+
+        }
+        System.out.println("You typed the following words: ");
+        Collections.reverse(words);
+
+        for (String reverse : words) {
+            System.out.println(reverse);
+        }
+        // create here an ArrayList
+    }
+}
